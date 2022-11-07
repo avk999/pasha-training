@@ -1,0 +1,16 @@
+#cloud-config
+
+package_upgrade: true
+packages:
+  - nginx
+  - wget
+  - vim
+
+# users:
+#   - default
+#   - name: k3s
+#     gecos: K3S
+#     ssh-authorized-keys:
+#       - ssh-idrsa ...
+runcmd:
+  - echo "You can add more commands here"
